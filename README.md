@@ -137,3 +137,13 @@ source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 
+2️⃣ Authenticate Google Earth Engine
+earthengine authenticate
+
+3️⃣ Execute the Pipeline
+python -m src.processing.preprocess_sentinel2_gee
+python -m src.processing.change_detection_ndvi_gee
+python -m src.processing.area_severity_ndvi_gee
+python -m src.processing.compliance_classification_gee
+python -m src.processing.alert_and_ranking_gee
+python -m src.reporting.final_results_table
