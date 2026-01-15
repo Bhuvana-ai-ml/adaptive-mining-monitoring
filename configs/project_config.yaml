@@ -1,0 +1,25 @@
+project:
+  name: adaptive-mining-monitoring
+  description: Sentinel-2 time-series based mining activity monitoring
+  crs: EPSG:4326
+
+sentinel2:
+  product: L2A
+  cloud_cover_max: 20
+  bands:
+    - B02
+    - B03
+    - B04
+    - B08
+    - B11
+    - B12
+
+temporal:
+  baseline_window: 3
+  change_threshold: 0.15
+
+risk_weights:
+  probability: 0.4
+  change: 0.3
+  boundary: 0.2
+  persistence: 0.1

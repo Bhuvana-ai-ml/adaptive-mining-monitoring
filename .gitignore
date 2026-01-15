@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+
+
+# Raw data (do NOT upload satellite imagery)
+data/raw/
+data/processed/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+# Earth Engine auth
+.earthengine/
+.config/earthengine/
