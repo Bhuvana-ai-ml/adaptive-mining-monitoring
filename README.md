@@ -130,8 +130,9 @@ Designed for **direct ingestion into regulatory dashboards or GIS systems**.
 
 ## ▶️ How to Run the Pipeline
 
-### **1️⃣ Environment Setup**
+
 ```bash
+1️⃣ Environment Setup
 python -m venv venv
 source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install -r requirements.txt
